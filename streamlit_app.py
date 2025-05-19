@@ -52,10 +52,10 @@ def draw_network(agg_df):
             color = 'purple'
             title = "Muilke gedaan & Sexy time"
         elif kissed:
-            color = 'yellow'
+            color = 'blue'
             title = "Muilke gedaan"
         elif fucked:
-            color = 'blue'
+            color = 'red'
             title = "Sexy time"
         else:
             color = 'gray'
