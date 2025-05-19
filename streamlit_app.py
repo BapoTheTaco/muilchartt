@@ -7,7 +7,7 @@ import tempfile
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5LCaBoStnQsD5lUxW3899FvaxN4Gr1D4Yh5mgTHe2k4D6Y31_RVG5wBhtvOWGbgBcajAXzwbOKcf7/pub?gid=844485577&single=true&output=csv"
 
 
-st.title("💋 Sexytime Network")
+st.title("DBRS Muilgraaf")
 
 @st.cache_data(ttl=60)
 def load_data():
@@ -60,13 +60,6 @@ df = load_data()
 df = normalize_pairs(df)
 agg = aggregate_pairs(df)
 
-st.subheader("Raw Data")
-st.dataframe(df)
-
-st.subheader("Aggregated Pair Interactions")
-st.dataframe(agg)
-
-st.subheader("Interactive Network Graph")
 
 net = draw_network(agg)
 with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as tmp:
