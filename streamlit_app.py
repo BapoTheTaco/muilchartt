@@ -65,4 +65,4 @@ net = draw_network(agg)
 with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as tmp:
     net.save_graph(tmp.name)
     html = open(tmp.name, 'r', encoding='utf-8').read()
-    st.components.v1.html(html, height=750, scrolling=True)
+    st.components.v1.html(html, height=500, scrolling=True)
