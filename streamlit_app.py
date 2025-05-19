@@ -11,9 +11,9 @@ st.title("DBRS Muilgraaf")
 # Legend
 st.markdown("""
 ### Legende
- 🔵 **Blauw** = Muilke gedaan
- 🟡 **Geel** = Sexy time
- 🔴 **Rood** = Beide
+ 🟡 **Geel** = Muilke gedaan
+ 🔵 **Blauw** = Sexy time
+ 🔴 **Paars** = Beide
 """)
 
 @st.cache_data(ttl=60)
@@ -49,16 +49,16 @@ def draw_network(agg_df):
         kissed = row['Muilke gedaan?']
         fucked = row['Sexy time?']
         if kissed and fucked:
-            color = 'red'
+            color = 'purple'
             title = "Muilke gedaan & Sexy time"
         elif kissed:
-            color = 'blue'
+            color = 'yellow'
             title = "Muilke gedaan"
         elif fucked:
-            color = 'yellow'
+            color = 'blue'
             title = "Sexy time"
         elif kissed and fucked:
-            color = 'red'
+            color = 'purple'
             title = "Muilke gedaan & Sexy time"
         else:
             color = 'gray'
