@@ -4,7 +4,7 @@ from pyvis.network import Network
 import tempfile
 
 # --- Your published Google Sheet CSV URL here ---
-CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR5LCaBoStnQsD5lUxW3899FvaxN4Gr1D4Yh5mgTHe2k4D6Y31_RVG5wBhtvOWGbgBcajAXzwbOKcf7/pub?gid=844485577&single=true&output=csv"
+CSV_URL = "https://raw.githubusercontent.com/BapoTheTaco/muilchartt/main/DBRS%20Muilchart%20(Antwoorden)%20-%20Formulierreacties%201%20(1).csv"
 
 st.title("DBRS Muilgraaf")
 
