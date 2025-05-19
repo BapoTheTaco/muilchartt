@@ -16,7 +16,7 @@ st.markdown("""
  🟣 **Paars** = Beide
 """)
 
-@st.cache_data(ttl=60)
+@st.cache_data(ttl=15)
 def load_data():
     df = pd.read_csv(CSV_URL)
     # Fix column names if needed
