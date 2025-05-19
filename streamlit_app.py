@@ -57,6 +57,9 @@ def draw_network(agg_df):
         elif fucked:
             color = 'yellow'
             title = "Sexy time"
+         elif kissed and fucked:
+            color = 'yellow'
+            title = "Muilke gedaan & Sexy time"
         else:
             color = 'gray'
             title = "None"
