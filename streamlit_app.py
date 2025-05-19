@@ -11,7 +11,7 @@ st.title("DBRS Muilgraaf")
 # Legend
 st.markdown("""
 ### Legende
- 🟡 **Geel** = Muilke gedaan
+ 🟡 **Geel** = Muilke
  🔵 **Blauw** = Sexy time
  🟣 **Paars** = Beide
 """)
