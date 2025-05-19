@@ -13,7 +13,7 @@ st.markdown("""
 ### Legende
  🟡 **Geel** = Muilke gedaan
  🔵 **Blauw** = Sexy time
- 🔴 **Paars** = Beide
+ 🟣 **Paars** = Beide
 """)
 
 @st.cache_data(ttl=60)
